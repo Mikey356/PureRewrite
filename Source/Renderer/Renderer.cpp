@@ -45,13 +45,13 @@ namespace Renderer
 		g_backpackShader.SetMat4("view", camera.GetViewMatrix());
 		g_backpackShader.SetMat4("model", model);
 
-		OpenGLTexture* texture = AssetManager::GetTextureByName("HouseLayout_CLR");
+		OpenGLTexture* texture = AssetManager::GetTextureByName("diffuse");
 		if (texture)
 		{
 			glActiveTexture(GL_TEXTURE0);
 			glBindTexture(GL_TEXTURE_2D, texture->GetHandle());
 		}
-		Model* testModel = AssetManager::GetModelByName("house");
+		Model* testModel = AssetManager::GetModelByName("backpack");
 		if (testModel) {
 			testModel->Draw();
 		}
@@ -60,5 +60,15 @@ namespace Renderer
 	{
 		g_backpackShader.Hotload();
 		std::cout << "Hotloaded shaders\n";
+	}
+
+	void EnableXRAY()
+	{
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
+	}
+	void DisableXRAY()
+	{
+		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 	}
 }

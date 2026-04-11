@@ -38,6 +38,6 @@ void LazyKeyPresses()
 {
 	if (Input::KeyPressed(PURE_KEY_ESCAPE)) Backend::ForceCloseWindow();
 	if (Input::KeyPressed(PURE_KEY_H))		Renderer::HotloadShaders();
-	if (Input::KeyDown(PURE_KEY_Q)) glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	if (Input::KeyDown(PURE_KEY_TAB)) glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+	if (Input::KeyDown(PURE_KEY_Q))			Renderer::EnableXRAY();
+	if (Input::KeyDown(PURE_KEY_TAB))	    Renderer::DisableXRAY();
 }
