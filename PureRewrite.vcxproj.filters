@@ -14,37 +14,66 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Libraries\glad\src\glad.c" />
     <ClCompile Include="Libraries\stb_image\stb_image.cpp" />
-    <ClCompile Include="Source\OpenGL\Types\Texture.cpp" />
-    <ClCompile Include="Source\AssetLoader\AssetLoader.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_Texture.cpp" />
+    <ClCompile Include="Source\AssetManager\AssetManager.cpp" />
     <ClCompile Include="Source\Backend\Backend.cpp" />
     <ClCompile Include="Source\Input\Input.cpp" />
+    <ClCompile Include="Source\Types\Camera.cpp" />
+    <ClCompile Include="Source\Types\Player.cpp" />
+    <ClCompile Include="Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="Source\Game\Game.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_shader.cpp" />
+    <ClCompile Include="Source\Renderer\Types\Mesh.cpp" />
+    <ClCompile Include="Source\Renderer\Types\Model.cpp" />
+    <ClCompile Include="Source\Util\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Shader\Shader.h">
+    <ClInclude Include="Source\OpenGL\Types\GL_shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Libraries\stb_image\stb_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Camera\Camera.h">
+    <ClInclude Include="Source\Renderer\Types\Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\AssetLoader\Model.h">
+    <ClInclude Include="Source\Renderer\Types\Mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\AssetLoader\Mesh.h">
+    <ClInclude Include="Source\OpenGL\Types\GL_Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\OpenGL\Types\Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\AssetLoader\AssetLoader.h">
+    <ClInclude Include="Source\AssetManager\AssetManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Backend\Backend.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Input\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input\keycodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Renderer\Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\Types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
