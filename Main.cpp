@@ -4,6 +4,7 @@
 #include "Input/Input.h"
 #include "Game/Game.h"
 #include "Renderer/Renderer.h"
+#include "Util/Timer.h"
 #include <iostream>
 
 

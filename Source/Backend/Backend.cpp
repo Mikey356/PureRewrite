@@ -51,6 +51,7 @@ namespace Backend
 		std::cout << "\nGL version: " << major << "." << minor << "\n";
 		g_currentWindowWidth  = width;
 		g_currentWindowHeight = height;
+
 		return true;
 	}
 

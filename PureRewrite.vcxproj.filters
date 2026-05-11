@@ -26,6 +26,8 @@
     <ClCompile Include="Source\Renderer\Types\Mesh.cpp" />
     <ClCompile Include="Source\Renderer\Types\Model.cpp" />
     <ClCompile Include="Source\Util\Util.cpp" />
+    <ClCompile Include="Source\Util\Timer.cpp" />
+    <ClCompile Include="Source\Types\GameObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\OpenGL\Types\GL_shader.h">
@@ -74,6 +76,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Util\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

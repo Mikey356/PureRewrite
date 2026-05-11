@@ -146,11 +146,13 @@
     <ClCompile Include="Source\Input\Input.cpp" />
     <ClCompile Include="Source\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\OpenGL\Types\GL_shader.cpp" />
+    <ClCompile Include="Source\Types\GameObject.cpp" />
     <ClCompile Include="Source\Types\Camera.cpp" />
     <ClCompile Include="Source\Renderer\Types\Mesh.cpp" />
     <ClCompile Include="Source\Renderer\Types\Model.cpp" />
     <ClCompile Include="Source\Types\Player.cpp" />
     <ClCompile Include="Source\OpenGL\Types\GL_Texture.cpp" />
+    <ClCompile Include="Source\Util\Timer.cpp" />
     <ClCompile Include="Source\Util\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +163,7 @@
     <ClInclude Include="Source\Input\Input.h" />
     <ClInclude Include="Source\Input\keycodes.h" />
     <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Types\GameObject.h" />
     <ClInclude Include="Source\Types\Camera.h" />
     <ClInclude Include="Source\Types\enums.h" />
     <ClInclude Include="Source\Types\Player.h" />
@@ -169,6 +172,7 @@
     <ClInclude Include="Source\Renderer\Types\Model.h" />
     <ClInclude Include="Source\OpenGL\Types\GL_shader.h" />
     <ClInclude Include="Source\Types\Types.h" />
+    <ClInclude Include="Source\Util\Timer.h" />
     <ClInclude Include="Source\Util\Util.h" />
   </ItemGroup>
   <ItemGroup>
