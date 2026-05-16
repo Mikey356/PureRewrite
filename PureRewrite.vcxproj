@@ -144,14 +144,16 @@
     <ClCompile Include="Source\Backend\Backend.cpp" />
     <ClCompile Include="Source\Game\Game.cpp" />
     <ClCompile Include="Source\Input\Input.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_frame_buffer.cpp" />
     <ClCompile Include="Source\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\OpenGL\Types\GL_shader.cpp" />
     <ClCompile Include="Source\Types\GameObject.cpp" />
     <ClCompile Include="Source\Types\Camera.cpp" />
     <ClCompile Include="Source\Renderer\Types\Mesh.cpp" />
     <ClCompile Include="Source\Renderer\Types\Model.cpp" />
+    <ClCompile Include="Source\Types\Light.cpp" />
     <ClCompile Include="Source\Types\Player.cpp" />
-    <ClCompile Include="Source\OpenGL\Types\GL_Texture.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_texture.cpp" />
     <ClCompile Include="Source\Util\Timer.cpp" />
     <ClCompile Include="Source\Util\Util.cpp" />
   </ItemGroup>
@@ -162,12 +164,15 @@
     <ClInclude Include="Source\Game\Game.h" />
     <ClInclude Include="Source\Input\Input.h" />
     <ClInclude Include="Source\Input\keycodes.h" />
+    <ClInclude Include="Source\OpenGL\Types\GL_frame_buffer.h" />
     <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Types\Constants.h" />
     <ClInclude Include="Source\Types\GameObject.h" />
     <ClInclude Include="Source\Types\Camera.h" />
     <ClInclude Include="Source\Types\enums.h" />
+    <ClInclude Include="Source\Types\Light.h" />
     <ClInclude Include="Source\Types\Player.h" />
-    <ClInclude Include="Source\OpenGL\Types\GL_Texture.h" />
+    <ClInclude Include="Source\OpenGL\Types\GL_texture.h" />
     <ClInclude Include="Source\Renderer\Types\Mesh.h" />
     <ClInclude Include="Source\Renderer\Types\Model.h" />
     <ClInclude Include="Source\OpenGL\Types\GL_shader.h" />
@@ -176,8 +181,10 @@
     <ClInclude Include="Source\Util\Util.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\OpenGL\GL_backpack.frag" />
-    <None Include="Resources\OpenGL\GL_backpack.vert" />
+    <None Include="Resources\GL_Shaders\post_processing.frag" />
+    <None Include="Resources\GL_Shaders\post_processing.vert" />
+    <None Include="Resources\GL_Shaders\shading.frag" />
+    <None Include="Resources\GL_Shaders\shading.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

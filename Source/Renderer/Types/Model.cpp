@@ -51,10 +51,24 @@ void Model::ProcessNode(aiNode* node, const aiScene* scene)
 
 Mesh Model::ProcessMesh(aiMesh* mesh, const aiScene* scene)
 {
+	// count the indices
+	int indexCount = 0;
+
+	for (unsigned int i = 0; i < mesh->mNumFaces; i++)
+	{
+		aiFace face = mesh->mFaces[i];
+
+		for (unsigned int j = 0; j < face.mNumIndices; j++)
+			indexCount += face.mIndices[j];
+	}
+
 	// data
 	std::vector<Vertex> vertices;
 	std::vector<unsigned int> indices;
 
+	// Reserve space to prevent vector reallocation on push_back
+	vertices.reserve(mesh->mNumVertices);
+	indices.reserve(indexCount);
 
 	// iterate through each of the mesh's vertices
 	for (unsigned int i = 0; i < mesh->mNumVertices; i++)

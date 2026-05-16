@@ -1,10 +1,11 @@
 #include "Util.h"
 #include <filesystem>
 #include <fstream>
+#include <iostream>
 
 namespace Util
 {
-    std::vector<std::string> GetFilePaths(const std::string& directory)
+    std::vector<std::string> GetFilePaths(const std::string& directory, const std::vector<std::string>& extensions)
     {
         std::vector<std::string> result;
 
@@ -17,7 +18,20 @@ namespace Util
         {
             if (!std::filesystem::is_regular_file(file))continue;
 
-            result.push_back(file.path().string());
+            // No extension supplied? Then just add it
+            if (extensions.empty()) {
+                result.push_back(file.path().string());
+                std::cout << "Was empty\n";
+            }
+            // Otherwise, only add it if the extension is found in the list
+            else
+            {
+                for (const std::string& extension : extensions)
+                {
+                    if ('.' + extension == file.path().extension().string())
+                        result.push_back(file.path().string());
+                }
+            }
         }
         return result;
     }

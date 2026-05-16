@@ -1,5 +1,6 @@
 #include "GL_shader.h"
 #include "Types/enums.h"
+#include <glad/glad.h>
 #include <iostream>
 
 

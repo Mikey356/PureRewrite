@@ -12,14 +12,14 @@ namespace AssetManager
     void Init()
     {
         // Load models
-        for (const std::string& filePath : Util::GetFilePaths("Resources/Models"))
+        for (const std::string& filePath : Util::GetFilePaths("Resources/Models", {"obj", "fbx"}))
         {
            
             g_models.emplace_back(filePath);
         }
 
         // Load textures
-        for (const std::string& filePath : Util::GetFilePaths("Resources/Textures"))
+        for (const std::string& filePath : Util::GetFilePaths("Resources/Textures", { "png", "jpg", "jpeg"}))
         {
             g_textures.emplace_back(filePath);
         }

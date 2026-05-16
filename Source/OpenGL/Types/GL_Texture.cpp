@@ -1,4 +1,4 @@
-#include "GL_Texture.h"
+#include "GL_texture.h"
 #include <stb_image.h>
 #include <iostream>
 #include <filesystem>

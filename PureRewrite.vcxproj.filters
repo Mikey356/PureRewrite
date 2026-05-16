@@ -14,7 +14,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Libraries\glad\src\glad.c" />
     <ClCompile Include="Libraries\stb_image\stb_image.cpp" />
-    <ClCompile Include="Source\OpenGL\Types\GL_Texture.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_texture.cpp" />
     <ClCompile Include="Source\AssetManager\AssetManager.cpp" />
     <ClCompile Include="Source\Backend\Backend.cpp" />
     <ClCompile Include="Source\Input\Input.cpp" />
@@ -28,6 +28,8 @@
     <ClCompile Include="Source\Util\Util.cpp" />
     <ClCompile Include="Source\Util\Timer.cpp" />
     <ClCompile Include="Source\Types\GameObject.cpp" />
+    <ClCompile Include="Source\Types\Light.cpp" />
+    <ClCompile Include="Source\OpenGL\Types\GL_frame_buffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\OpenGL\Types\GL_shader.h">
@@ -42,7 +44,7 @@
     <ClInclude Include="Source\Renderer\Types\Mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\OpenGL\Types\GL_Texture.h">
+    <ClInclude Include="Source\OpenGL\Types\GL_texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\AssetManager\AssetManager.h">
@@ -84,9 +86,20 @@
     <ClInclude Include="Source\Types\GameObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Types\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Types\Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\OpenGL\Types\GL_frame_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\OpenGL\GL_backpack.vert" />
-    <None Include="Resources\OpenGL\GL_backpack.frag" />
+    <None Include="Resources\GL_Shaders\shading.vert" />
+    <None Include="Resources\GL_Shaders\shading.frag" />
+    <None Include="Resources\GL_Shaders\post_processing.vert" />
+    <None Include="Resources\GL_Shaders\post_processing.frag" />
   </ItemGroup>
 </Project>

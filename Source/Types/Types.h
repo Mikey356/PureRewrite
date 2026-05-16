@@ -2,6 +2,7 @@
 #include <glm/common.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/quaternion.hpp>
+#include "Constants.h"
 
 struct Vertex {
 	glm::vec3 Position = glm::vec3(0.0f);

@@ -13,7 +13,7 @@ void LazyKeyPresses();
 auto main() -> int
 {
 	std::cout << "\x1B[2J\x1B[HI did!\n";
-	Backend::Init("PureBranch", 1280, 720);
+	Backend::Init("PureBranch", 1920, 1080);
 	AssetManager::Init();
 	Game::Init();
 	Renderer::Init();
@@ -38,7 +38,8 @@ auto main() -> int
 void LazyKeyPresses()
 {
 	if (Input::KeyPressed(PURE_KEY_ESCAPE)) Backend::ForceCloseWindow();
+	if (Input::KeyPressed(PURE_KEY_F))		Backend::ToggleFullScreen();
 	if (Input::KeyPressed(PURE_KEY_H))		Renderer::HotloadShaders();
-	if (Input::KeyDown(PURE_KEY_Q))			Renderer::EnableXRAY();
-	if (Input::KeyDown(PURE_KEY_TAB))	    Renderer::DisableXRAY();
+	if (Input::KeyDown(PURE_KEY_F4))		Renderer::EnableXRAY();
+	if (Input::KeyDown(PURE_KEY_F5))	    Renderer::DisableXRAY();
 }
